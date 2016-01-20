@@ -20,11 +20,24 @@ public class MainActivity extends ActionBarActivity {
      * This method is called when the order button is clicked.
      */
     int noOfCoffees=2;
+
     public void submitOrder(View view) {
-        String priceMessage="Total:$"+(noOfCoffees*5)+"\nThank you!";
-        displayMessage(priceMessage);
+
+        displayMessage(createOrderSummary(noOfCoffees));
 
     }
+    private String createOrderSummary(int noOfCoffees){
+
+        String priceMessage="Name: Kaptain Kunal\nQuantity: "+noOfCoffees+"\nTotal:$"+noOfCoffees*5+"\nThank you!";
+        return priceMessage;
+    };
+
+    /**
+     * Calculates the price of the order.
+     *
+     * @param noOfCoffees is the number of cups of coffee ordered
+     */
+
 
     /**
      * This method displays the given quantity value on the screen.
