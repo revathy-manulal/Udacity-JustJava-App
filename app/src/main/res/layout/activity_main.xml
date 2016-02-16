@@ -81,8 +81,8 @@
             <Button
                 android:layout_width="48dp"
                 android:layout_height="48dp"
-                android:text="+"
-                android:onClick="increment"/>
+                android:text="-"
+                android:onClick="decrement"/>
 
             <TextView
                 android:text="2"
@@ -92,27 +92,16 @@
                 android:textSize="16sp"
                 android:paddingLeft="16dp"
                 android:paddingRight="16dp"/>
+
             <Button
                 android:layout_width="48dp"
                 android:layout_height="48dp"
-                android:text="-"
-                android:onClick="decrement"/>
+                android:text="+"
+                android:onClick="increment"/>
+
         </LinearLayout>
 
-        <TextView
-            android:text="ORDER SUMMARY"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="@android:color/black" />
 
-        <TextView
-            android:text="$0"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/order_summary_text_view"
-            android:textSize="16sp"
-            android:paddingTop="16dp"
-            android:paddingBottom="16dp"/>
 
         <Button
             android:layout_width="wrap_content"
